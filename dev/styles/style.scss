@@ -10,7 +10,35 @@ body{
 	font-size: 62.5%;
 }
 
+.colourfieldApp{
+	display: flex;
+	flex-direction:row;
+}
+
+.gradient{
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 1px solid black;
+	text-align: center;
+
+}
+
 h1{
 	color:black;
 	text-transform: uppercase;
+}
+
+.colornames{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+li{
+	padding: 20px;
+	background-color: #000;
+	list-style: none;
+	text-shadow: 1px 1px 1px #ccc;
+	font-size: 1.6rem;
 }

@@ -38,15 +38,15 @@ const createGradient = function() {
 		if (matchArray.length === 1){
 			$(".gradient").css("background", `${newGradient}`);
 		} else {
-			$(".gradient").css("background", `linear-gradient(45deg, ${newGradient})`);
+			$(".gradient").css("background", `radial-gradient(circle at center, ${newGradient})`);
 		}
 	}
 }
 
-const searchInput = document.querySelector(".search");
+const gradientInput = document.querySelector(".search");
 
-searchInput.addEventListener('change', createGradient);
-searchInput.addEventListener('keyup', createGradient);
+gradientInput.addEventListener('change', createGradient);
+gradientInput.addEventListener('keyup', createGradient);
 
 $(function() {
 	colorListing(colors);
